@@ -1,20 +1,10 @@
-from fastapi import FastAPI, HTTPException, Depends, Path, Query
+from fastapi import FastAPI, HTTPException, Path, Query
 from pydantic import BaseModel, Field
 from typing import List, Optional
 import json
 import os
-from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Customer Management API")
-
-# Tambahkan middleware CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Izinkan semua origin
-    allow_credentials=True,
-    allow_methods=["*"],  # Izinkan semua method
-    allow_headers=["*"],  # Izinkan semua header
-)
 
 # Path file untuk penyimpanan data
 DATA_FILE = "customers.txt"

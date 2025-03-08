@@ -1,12 +1,10 @@
-from fastapi import FastAPI, HTTPException, Depends, Path, Query, File, UploadFile, Form
+from fastapi import FastAPI, HTTPException, Path
 from pydantic import BaseModel, Field
-from typing import List, Optional, Union
+from typing import List, Optional
 import json
 import os
 import joblib
 import pandas as pd
-import io
-from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from pyngrok import ngrok
 
