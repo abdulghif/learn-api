@@ -61,6 +61,15 @@ def get_new_id(customers):
         return 1
     return max(customer["id"] for customer in customers) + 1
 
+# API endpoints
+@app.get("/")
+async def root():
+    return {"message": "Customer Churn Prediction API"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 # Endpoint untuk menambahkan customer baru (POST)
 @app.post("/customers/", response_model=CustomerResponse, status_code=201)
 def create_customer(customer: Customer):

@@ -68,6 +68,15 @@ def read_customers():
     except json.JSONDecodeError:
         return []
 
+# API endpoints
+@app.get("/")
+async def root():
+    return {"message": "Customer Churn Prediction API"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 # Fungsi untuk menulis data ke file
 def write_customers(customers):
     with open(DATA_FILE, "w") as file:

@@ -78,6 +78,15 @@ def get_model():
         raise HTTPException(status_code=500, detail="Model belum dilatih. Jalankan modelling.py terlebih dahulu.")
     return joblib.load(model_path)
 
+# API endpoints
+@app.get("/")
+async def root():
+    return {"message": "Customer Churn Prediction API"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 # Endpoint untuk menambahkan customer baru (POST)
 @app.post("/customers/", response_model=CustomerResponse, status_code=201)
 def create_customer(customer: Customer):
