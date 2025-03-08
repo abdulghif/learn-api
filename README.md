@@ -7,7 +7,8 @@ This repository contains a machine learning API for predicting customer churn ba
 ```
 ├── .gitignore                      # Git ignore file
 ├── 000_basic_api_scrape.py         # Basic API introduction: scraping Google Images
-├── 001_basic_endpoint.py           # Basic API endpoint introduction
+├── 001a_basic_endpoint.py          # Basic API endpoint introduction
+├── 001b_basic_endpoint_model.py    # Simple model implementation using Iris dataset
 ├── 002_create_endpoint.py          # API endpoint creation script
 ├── 003_model_endpoint.py           # Model endpoint implementation
 ├── 004_public_endpoint.py          # Public API endpoint setup
@@ -50,10 +51,11 @@ To use this project, you'll need:
 This repository shows the step-by-step development of an API:
 
 1. **Web Scraping API** (`000_basic_api_scrape.py`): Initial API introduction to scrape Google Images
-2. **Basic Endpoint** (`001_basic_endpoint.py`): Introduction to API endpoints
-3. **Creating Endpoints** (`002_create_endpoint.py`): How to create API endpoints
-4. **Model Integration** (`003_model_endpoint.py`): Integrating ML models into API endpoints
-5. **Public Deployment** (`004_public_endpoint.py`): Setting up public-facing endpoints
+2. **Basic Endpoint** (`001a_basic_endpoint.py`): Introduction to API endpoints
+3. **Simple Model Endpoint** (`001b_basic_endpoint_model.py`): Basic model implementation using the Iris dataset
+4. **Creating Endpoints** (`002_create_endpoint.py`): How to create API endpoints
+5. **Model Integration** (`003_model_endpoint.py`): Integrating ML models into API endpoints
+6. **Public Deployment** (`004_public_endpoint.py`): Setting up public-facing endpoints
 
 ### Training a Model
 
@@ -75,6 +77,12 @@ To run the basic API:
 
 ```
 python 000_basic_api_scrape.py
+```
+
+To run the simple Iris model API:
+
+```
+python 001a_basic_endpoint_model.py
 ```
 
 For the complete API with the model integration:

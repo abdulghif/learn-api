@@ -184,8 +184,6 @@ def predict_churn(data: ChurnPredictionInput):
         "message": message
     }
 
-# Tambahkan endpoint baru di main.py
-
 # Endpoint untuk prediksi churn bulk dari customers yang sudah tersimpan
 @app.get("/predict/churn/all-customers", response_model=BulkPredictionResult)
 def predict_all_customers_churn():
@@ -270,3 +268,4 @@ if __name__ == "__main__":
     # Start the FastAPI server
     print(f"Starting FastAPI server on port {port}...")
     uvicorn.run(app, host="127.0.0.1", port=8000)
+    
