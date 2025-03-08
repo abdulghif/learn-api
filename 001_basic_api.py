@@ -100,7 +100,7 @@ def main():
     search_query = input("Enter search query: ")
     api_key = input("Enter your SerpAPI key: ")
     num_images = int(input("Enter number of images to download: "))
-    folder_name = input("Enter folder name to save images: ")
+    folder_name = search_query
     
     # Create folder if it doesn't exist
     if not os.path.exists(folder_name):
