@@ -1,7 +1,15 @@
-*.txt*
+*token*
+
+*customers*
+
 *.png*
+
 *.jpg*
+
 *.jpeg*
+
 *.pkl*
+
 *.joblib*
+
 *.csv*
