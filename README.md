@@ -6,7 +6,7 @@ This repository contains a machine learning API for predicting customer churn ba
 
 ```
 ├── .gitignore                      # Git ignore file
-├── 001_basic_api.py                # Basic API introduction
+├── 001_basic_api.py                # Basic API introduction: scrapping Google Images
 ├── 002_create_endpoint.py          # API endpoint creation script
 ├── 003_model_endpoint.py           # Model endpoint implementation
 ├── 004_public_endpoint.py          # Public API endpoint setup
@@ -42,7 +42,7 @@ To use this project, you'll need:
 
 This repository shows the step-by-step development of an API:
 
-1. **Basic API Setup** (`001_basic_api.py`): Initial API introduction
+1. **Basic API Setup** (`001_basic_api.py`): Initial API introduction to scrape Google Images
 2. **Creating Endpoints** (`002_create_endpoint.py`): How to create API endpoints
 3. **Model Integration** (`003_model_endpoint.py`): Integrating ML models into API endpoints
 4. **Public Deployment** (`004_public_endpoint.py`): Setting up public-facing endpoints
